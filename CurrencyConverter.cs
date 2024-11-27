@@ -8,11 +8,6 @@ public class CurrencyConverter
 
     public CurrencyConverter(decimal dollar, decimal euro, decimal sek)
     {
-        if (dollar <= 0 || euro <= 0 || sek <= 0)
-        {
-            throw new ArgumentException("Currency values must be greater than zero.");
-        }
-
         Dollar = dollar;
         Euro = euro;
         SEK = sek;
